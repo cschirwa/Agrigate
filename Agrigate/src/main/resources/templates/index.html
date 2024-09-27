@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1000/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description-agrigate" content="">
+	<meta name="author-agrigate" content="">
+	<title>Agrigate Admin</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/admin-style.css" rel="stylesheet">
+	<!-- Vendor Stylesheets -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+<body class="sb-nav-fixed">
+	<div th:replace="fragments/topnav::topnavbar"></div>
+	<div id="layoutSidenav">
+	<div th:replace="fragments/sidenav::navbar"></div>
+	<div id="layoutSidenav_content">
+		<main>
+			<div class="container-fluid">
+				<h2 class="mt-30 page-title">Dashboard</h2>
+				<ol class="breadcrumb mb-30">
+					<li class="breadcrumb-item active">Month-To-Date Dashboard</li>
+				</ol>
+				<div class="row">
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card success">
+							<div class="card-content">
+								<span class="card-title">Invoices</span>
+								<span class="card-count">R 120,888.00</span>
+							</div>
+							<div class="card-media">
+								<i class="fas fa-money-bill rpt_icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card info">
+							<div class="card-content">
+								<span class="card-title">Payments Rcvd</span>
+								<span class="card-count">R 135,200</span>
+							</div>
+							<div class="card-media">
+								<i class="fas fa-hand-holding-usd rpt_icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card red">
+							<div class="card-content">
+								<span class="card-title">Unpaid Invoices</span>
+								<span class="card-count">R400,500</span>
+							</div>
+							<div class="card-media">
+								<i class="fas fa-hand-holding rpt_icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card purple">
+							<div class="card-content">
+								<span class="card-title">Active Loads</span>
+								<span class="card-count">8</span>
+							</div>
+							<div class="card-media">
+								<i class="fas fa-shipping-fast rpt_icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card orange">
+							<div class="card-content">
+								<span class="card-title">Orders Pending</span>
+								<span class="card-count">2</span>
+							</div>
+							<div class="card-media">
+								<i class="fab fa-rev"></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="dashboard-report-card olive">
+							<div class="card-content">
+								<span class="card-title">Client Costs</span>
+								<span class="card-count">R97,950</span>
+							</div>
+							<div class="card-media">
+								<i class="fas fa-money-check-alt rpt_icon"></i>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card blue">
+								<div class="card-content">
+									<span class="card-title">VAT on Purchases</span>
+									<span class="card-count">R 65,330.00</span>
+								</div>
+								<div class="card-media">
+									<i class="fas fa-money-bill rpt_icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card blue">
+								<div class="card-content">
+									<span class="card-title">VAT on Sales</span>
+									<span class="card-count">R 75,650.00</span>
+								</div>
+								<div class="card-media">
+									<i class="fas fa-hand-holding-usd rpt_icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card blue">
+								<div class="card-content">
+									<span class="card-title">Net VAT Payable</span>
+									<span class="card-count">R 10,320.00</span>
+								</div>
+								<div class="card-media">
+									<i class="fas fa-hand-holding rpt_icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card peach">
+								<div class="card-content">
+									<span class="card-title">Fuel Purchases</span>
+									<span class="card-count">R 88,000.00</span>
+								</div>
+								<div class="card-media">
+									<i class="fas fa-shipping-fast rpt_icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card peach">
+								<div class="card-content">
+									<span class="card-title">Truck Maintenance Purchases</span>
+									<span class="card-count">R 58,000.00</span>
+								</div>
+								<div class="card-media">
+									<i class="fab fa-rev"></i>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-md-6">
+							<div class="dashboard-report-card peach">
+								<div class="card-content">
+									<span class="card-title">Road Fines and Fees </span>
+									<span class="card-count">R 8,600</span>
+								</div>
+								<div class="card-media">
+									<i class="fas fa-money-check-alt rpt_icon"></i>
+								</div>
+							</div>
+						</div>
+
+					<div class="col-xl-12 col-md-12">
+						<div class="card card-static-2 mb-30">
+							<div class="card-title-2">
+								<h4>Recent Orders</h4>
+								<a th:href="@{/orders}" class="view-btn hover-btn">View All</a>
+							</div>
+							<div class="card-body-table">
+								<div class="table-responsive">
+									<table class="table ucp-table table-hover">
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th style="width:130px">Order ID</th>
+												<th>Customer Details</th>
+												<th style="width:200px">Date</th>
+												<th style="width:300px">Address</th>
+												<th style="width:130px">Status</th>
+												<th style="width:130px">Total</th>
+												<th style="width:100px">Action</th>
+											</tr>
+										</thead>
+										<tbody th:each="order: ${orders}">
+											<tr>
+												<td><input type="checkbox" class="check-item" name="ids[]" value="4"></td>
+												<td th:text="${order.id}">ORDER12346</td>
+												<td th:text="${order.customer.firstname + ' ' + order.customer.lastname + ' -- ' + order.customer.email}" >Customer name Here</td>
+												<td th:text="${#temporals.format(order.orderDate,'dd MMM yyyy')}" class="delivery-time">15/06/2020</td>
+												<td th:text="${order.address}">Destination Address</td>
+												<td>
+													<span class="badge-item badge-status" th:text="${order.status}">Cancelled</span>
+												</td>
+												<td th:text="${order.orderTotal}">$90</td>
+												<td class="action-btns">
+													<a th:href="@{/order/view/{id}(id=${order.id})}" class="views-btn"><i class="fas fa-eye"></i></a>
+													<a th:href="@{/order/edit/{id}(id=${order.id})}" class="edit-btn"><i class="fas fa-edit"></i></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div th:replace="fragments/footer::footer"></div>
+	</div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/chart/highcharts.js"></script>
+<script src="vendor/chart/exporting.js"></script>
+<script src="vendor/chart/export-data.js"></script>
+<script src="vendor/chart/accessibility.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/chart.js"></script>
+
+</body>
+</html>
